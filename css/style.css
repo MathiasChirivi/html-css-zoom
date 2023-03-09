@@ -72,37 +72,52 @@ main .item{
 
 
 /*FOOTER*/
-footer{
-    background-color: black;
-    width: 100%;
+.bottom{
+    bottom: 0;
     height: 70px;
-    display: flex;
-    align-items: center;
-}
-
-.containerFoot{
     width: 100%;
+    background-color: #272727;
     display: flex;
     justify-content: space-between;
 }
 
-.boxFootSX{
-    background-color:aquamarine ;
-    min-height: 20px;
-    width: 40px;
-    margin: 10px;
+.bottom .barra {
+    display: flex;
 }
 
-.boxFootCentre{
-    background-color:aquamarine ;
-    min-height: 20px;
-    width: 40px;
-    margin: 10px;
+.bottom .barra .barra1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    align-items: center;
 }
 
-.boxFootDX{
-    background-color:aquamarine ;
-    min-height: 20px;
-    width: 40px;
-    margin: 10px;
+.bottom .barra .barra1 .item-icon {
+    font-size: 17px;
+}
+
+.bottom .barra .barra1 .item-description {
+    font-size: 9px;
+    margin: 7px 0;
+}
+
+.bottom .barra .barra1 .item-more {
+    font-size: 8px;
+    margin: 2px 15px;
+}
+
+.bottom .barra #share-screen {
+    margin-right: 15px;
+}
+
+.bottom .barra #share-screen .item-icon{
+    color: #4BC800;
+}
+
+.bottom .barra #end-meeting {
+    color: #FF0000;
+    background-color: #4A4A4A;
 }
