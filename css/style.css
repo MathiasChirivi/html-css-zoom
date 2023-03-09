@@ -54,20 +54,46 @@ main{
     display: flex;
     align-items: center;
 }
-main .item{
-    width: 85%;
-    height: 90%;
-    margin: 0 auto;
+
+.item {
+    padding-top: 85px;
+    padding-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    overflow-y: auto;
 }
 
-.cards{
-    width: calc(100% / 7 - 10px);
-    height: calc(100% / 5 - 10px);
-    background-image: url("../sfondo.png");
-    margin: 5px;
-    background-repeat: no-repeat;
+.item .cards {
+    width: 160px;
+    height: 100px;
+    background-image: url(https://picsum.photos/160/100);
+    background-size: cover;
+    position: relative;
+    margin: 5px 2px;
+}
+
+.item .cards .cards-info {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    background-color: rgba(140, 140, 140, 0.5);
+    color: white;
+    font-size: 9px;
+    max-width: 80%;
+}
+
+.item .cards .cards-info .nickname{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.meeting-container .cards .cards-info .microphone {
+    margin-right: 2px;
 }
 
 
