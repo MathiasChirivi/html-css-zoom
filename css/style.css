@@ -83,16 +83,9 @@ main .item{
     font-size: 9px;
 }
 
-.item .cards .cards-info .nickname{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.microphone{
+    margin-right: 5px;
 }
-
-.meeting-container .cards .cards-info .microphone {
-    margin-right: 2px;
-}
-
 
 /*FOOTER*/
 footer{
