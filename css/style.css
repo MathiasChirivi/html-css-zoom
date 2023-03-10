@@ -19,15 +19,19 @@ header{
     align-items: center;
 }
 
+button{
+    background-color: rgba(140, 140, 140);
+    cursor: pointer;
+}
+
 .boxCella{
-    background: rgb(192 192 192 / 50%);
+    background: rgba(140, 140, 140, 1.0);
     display: flex;
     align-items: center;
     color: white;
+    padding: 4px;
     min-height: 20px;
     min-width: 70px;
-    padding: 1px;
-    margin: 5px;
 }
 
 .subTitle{
@@ -39,8 +43,7 @@ header{
     background: rgb(192 192 192 / 50%);
     min-height: 20px;
     width: 20px;
-    margin: 5px;
-    padding: 1px;
+    padding: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,37 +91,58 @@ main .item{
 }
 
 /*FOOTER*/
-footer{
-    background-color: black;
-    width: 100%;
+.bottom{
+    bottom: 0;
     height: 70px;
-    display: flex;
-    align-items: center;
-}
-
-.containerFoot{
     width: 100%;
+    background-color: #272727;
     display: flex;
     justify-content: space-between;
 }
 
-.boxFootSX{
-    background-color:aquamarine ;
-    min-height: 20px;
-    width: 40px;
-    margin: 10px;
+.bottom .barra {
+    display: flex;
 }
 
-.boxFootCentre{
-    background-color:aquamarine ;
-    min-height: 20px;
-    width: 40px;
-    margin: 10px;
+.barra1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    align-items: center;
 }
 
-.boxFootDX{
-    background-color:aquamarine ;
-    min-height: 20px;
-    width: 40px;
-    margin: 10px;
+.item-icon {
+    font-size: 17px;
+}
+
+.item-description {
+    font-size: 9px;
+    margin: 7px 0;
+}
+
+.item-more {
+    font-size: 8px;
+    margin: 14px 15px;
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+#share-screen {
+    margin-right: 15px;
+}
+
+.bottom .barra #share-screen .item-icon{
+    color: #4BC800;
+}
+
+.bottom .barra #end-meeting {
+    color: #FF0000;
+    background-color: #4a4a4a;
+    width: 90px;
 }
